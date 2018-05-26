@@ -33,6 +33,6 @@ module "nomad" {
   nomad_enabled = true
   nomad_version = "${var.nomad_version}"
 
-  hashiui_enabled = false
-  hashiui_version = ""
+  vault_enabled = false
+  vault_version = ""
 }

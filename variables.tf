@@ -42,13 +42,13 @@ variable "vpc_cidr_block" {
 }
 
 variable "azs" {
-  default = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  default = ["us-east-1b", "us-east-1c"]
 }
 
 variable "private_subnets" {
-  default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
 }
 
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t2.small"
 }

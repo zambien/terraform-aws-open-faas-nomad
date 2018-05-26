@@ -21,3 +21,19 @@ output "route_table_id" {
 output "subnets" {
   value = ["${aws_subnet.default.*.id}"]
 }
+
+output "nomad_endpoint" {
+  value = "http://${aws_alb.nomad.dns_name}:4646/"
+}
+
+output "openfaas_endpoint" {
+  value = "http://${aws_alb.openfaas.dns_name}:8080/"
+}
+
+output "grafana_endpoint" {
+  value = "http://${aws_alb.openfaas.dns_name}:3000/"
+}
+
+output "prometheus_endpoint" {
+  value = "http://${aws_alb.openfaas.dns_name}:9090/"
+}
