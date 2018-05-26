@@ -62,10 +62,10 @@ $ faas-cli deploy --gateway=$GATEWAY --image=functions/nodeinfo:latest --name=in
 $ faas-cli invoke --name=info
 ```
   
-The OpenFaaS UI is also available at http://$(terraform output faas_alb):8081
+The OpenFaaS UI is also available at http://$(terraform output faas_alb):8080
 
 ```bash
-$ open http://$(terraform output faas_alb):8081
+$ open http://$(terraform output faas_alb):8080
 ```
    
 Please see [example/terraform.tf](https://github.com/nicholasjackson/terraform-aws-open-faas-nomad/blob/master/example/terraform.tf) for usage with all configurable options and 

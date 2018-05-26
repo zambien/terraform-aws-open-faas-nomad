@@ -4,3 +4,6 @@
 .envrc
 .idea
 *.iml
+
+template
+build
