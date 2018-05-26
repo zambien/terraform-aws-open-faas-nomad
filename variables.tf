@@ -42,7 +42,7 @@ variable "vpc_cidr_block" {
 }
 
 variable "azs" {
-  default = ["us-east-1b", "us-east-1c"]
+  default = ["us-west-1b", "us-west-1c"]
 }
 
 variable "private_subnets" {

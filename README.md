@@ -40,13 +40,13 @@ $ terraform apply
 
 ```bash
 $ export NOMAD_ADDR=http://$(terraform output nomad_alb):4646/  
-$ export GATEWAY=http://$(terraform output faas_alb):8080/
+$ export GATEWAY=http://$(terraform output openfaas_alb):8080/
 ```
 
 ### 6. Run OpenFaaS on the Nomad cluster
 
 ```bash
-$ curl https://raw.githubusercontent.com/hashicorp/faas-nomad/master/faas.hcl -o faas.hcl
+$ curl https://raw.githubusercontent.com/hashicorp/faas-nomad/master/nomad_job_files/faas.hcl -o faas.hcl
 $ nomad run faas.hcl
 ```
 
